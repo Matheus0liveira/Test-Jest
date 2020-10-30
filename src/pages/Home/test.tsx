@@ -9,5 +9,7 @@ describe('<Main/>', () => {
     expect(
       screen.getByRole('heading', { name: /Matheus/i })
     ).toBeInTheDocument();
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
